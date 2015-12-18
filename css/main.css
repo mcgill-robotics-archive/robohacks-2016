@@ -87,8 +87,11 @@ a {
 }
 a:hover {
 	color:#EE1A30;
+	text-decoration: none;
 }
 #header {
+	height:100vh;
+	width:100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	/*parallax scrolling*/
@@ -100,6 +103,7 @@ a:hover {
 	background: -webkit-linear-gradient(top, rgba(191,0,0,1) 0%,rgba(89,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, rgba(191,0,0,1) 0%,rgba(89,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf0000', endColorstr='#590000',GradientType=0 ); /* IE6-9 */
+	display:table;
 }
 h1 {
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -110,47 +114,13 @@ h1 {
 	letter-spacing: 5px;
 }
 
-#nav {
-	text-align: center;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 4em;
-	line-height: 4em;
-	text-transform: uppercase;
-	font-size: 15px;
-	font-weight: 600;
-	font-family: 'Open Sans Condensed', sans-serif;
-	letter-spacing: 2px;
-}
-
-#nav > ul {
-	margin: 0;
-}
-
-#nav > ul > li {
-	display: inline-block;
-	margin-left: 2em;
-}
-#nav a {
-	color:#fff;
-}
-#nav a:hover {
-	color:#FFB3B3;
-	text-decoration: none;
-	-moz-transition: all .1s ease-in;
-    -o-transition: all .1s ease-in;
-    -webkit-transition: all .1s ease-in;
-    transition: all .1s ease-in;
-}
-
 #site-title {
+    display: table-cell;
+    vertical-align: middle;
 	position: relative;
 	text-align: center;
-	padding-top:50px;
-	padding-bottom:130px;
 	background-image: url('../img/R.png');
-	background-position: 50% 25%;
+	background-position: 50% 45%;
 	background-repeat: no-repeat;
 	background-size: auto;
 	-webkit-background-size: auto;
@@ -160,6 +130,7 @@ h1 {
 	/*background-attachment: fixed;*/
 }
 #header h1 {
+	margin-top: -30px;
 	font-size: 90px;
 	color:#fff;
 	text-transform: uppercase;
@@ -172,24 +143,24 @@ h1 {
 #site-title h1 {
 	font-size: 100px;
 	color:#fff;
-	padding-top:50px;
 	text-transform: uppercase;
-	/*text-shadow:5px 4px 0px #ED9494;*/
 	padding-bottom: 0px;
 }
 #site-title h2 {
-	font-size: 50px;
+	font-size: 40px;
 	color:#fff;
-	padding-bottom: 20px;
-	font-family: 'Open Sans Condensed', sans-serif;
+	padding-bottom: 40px;
+	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
+	font-weight: 200;
 }
 #site-title h3 {
 	font-size: 19px;
 	color:#FFB3B3;
-	padding-bottom: 50px;
+	padding-bottom: 25px;
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 5px;
+	font-weight: 200;
 }
 #site-title h4 {
 	font-size: 22px;
@@ -199,107 +170,18 @@ h1 {
 	/*letter-spacing: 5px;*/
 	text-transform: uppercase;
 }
-#blurb {
-	background-color: #f2f1f2;
-	padding: 60px 0;
-	color:#444;
-	text-align: center;
+@media only screen and (max-width: 470px) {
+	#site-title {
+		background-size: 80%;
+	}
+	#site-title h1 {
+		font-size: 70px;
+	}
+	#site-title h2 {
+		font-size: 30px;
+	}
+	#site-title h3 {
+		font-size: 15px;
+		letter-spacing: 3px;
+	}
 }
-#blurb h1 {
-	letter-spacing: 2px;
-	padding-bottom: 10px;
-}
-#blurb p {
-	padding-top:10px;
-}
-#faq {
-	background: #EFE1E1;
-	padding:50px 0;
-	color:#3f3f3f;
-	background-image:
-	 url("../img/dark-tl.svg"), 
-	 url("../img/dark-tr.svg"), 
-	 url("../img/dark-bl.svg"), 
-	 url("../img/dark-br.svg");
-	background-position: 
-	top left,
-	top right,
-	bottom left, 
-	bottom right;
-	background-size: 20em, 20em, 20em, 20em; 
-	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-}
-#faq h1 {
-	font-size: 30px;
-	text-transform: uppercase;
-	color: #3f3f3f;
-	padding-bottom: 20px;
-	text-align: center;
-}
-#faq h2 {
-	color:#bf0000;
-	font-size: 20px;
-	padding:20px 0;
-	text-transform: uppercase;
-	font-family: 'Open Sans Condensed', sans-serif;
-	letter-spacing: 0px;
-	font-weight: 700;
-}
-#faq p {
-	text-align: left;
-	line-height: 20px;
-}
-#faq .well {
-	background:none;
-	box-shadow: none;
-	border:0px solid #fff;
-}
-#sponsors {
-	background-color: #f2f1f2;
-	padding: 60px 0;
-	color:#444;
-	text-align: center;
-}
-#sponsors h1 {
-	font-size: 30px;
-	text-transform: uppercase;
-	padding-bottom: 25px;
-	text-align: center;
-}
-#sponsors h2 {
-	font-size: 25px;
-	text-transform: uppercase;
-	padding: 20px 0;
-}
-#sponsors p {
-	font-size: 16px;
-	line-height: 20px;
-	padding: 10px 0;
-}
-#sponsors ul, #sponsors ol {
-	list-style-type: lower-roman;
-	padding-left: 55px;
-	font-weight: 600;
-	color: #d85656;
-}
-#contact {
-	background-color: #3f3f3f;
-	padding: 50px 0;
-	color: #fff;
-	text-align: center;
-}
-#contact h1 {
-	font-size: 30px;
-	text-transform: uppercase;
-	padding-bottom: 25px;
-}
-#contact p {
-	padding: 10px 0 40px 0;
-
-}
-#sponsors {
-	background: #f2f1f2;
-	padding:50px 0;
-	color:#444;
-}
-
