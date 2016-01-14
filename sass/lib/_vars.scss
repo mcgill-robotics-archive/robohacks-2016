@@ -1,35 +1,16 @@
 $font: (
-	family:				('Open Sans', Courier, Helvetica, sans-serif),
-	family-heading:		('Geomanist', Courier, Arial, sans-serif),
+	family:				('Open Sans', Helvetica, sans-serif),
+	family-heading:		('Geomanist', Arial, sans-serif),
 	weight:				normal,
 	weight-bold:		bold,
 	weight-light:		300,
 );
 $palette: (
 	bg:					#181919,
-	bg-alt:				darken(#181919, 5),
 	fg:					#ffffff,
 	accent:				#db2c27,
 );
 $duration: (
 	transition:			0.2s,
 	activation:			1s
-);
-$size: (
-	inner:				(
-		default:		80em,
-		xlarge:			70em,
-		large:			60em,
-		medium:			90%,
-	),
-	section-spacing:	(
-		large:			3em,
-		medium:			2em,
-		small:			1.75em
-	),
-	wrapper:			(
-		large:			10em,
-		medium:			7em,
-		small:			4em
-	),
 );
