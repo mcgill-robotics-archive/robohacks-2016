@@ -1,0 +1,88 @@
+.section {
+	padding: 2.5em 0 3.5em 0;
+
+	@include breakpoint(medium) {
+		padding: 3.5em 0 5em 0;
+	}
+
+	@include breakpoint(large) {
+		padding: 5em 0 6.5em 0;
+	}
+}
+
+#about {
+	background-color: _palette(fg);
+}
+
+#faq {
+	background-color: darken(_palette(fg), 3);
+
+	h2 {
+		text-align: left;
+	}
+}
+
+#sponsors {
+	background-color: lighten(_palette(bg), 2);
+	text-align: center;
+
+	.container {
+		letter-spacing: 50px;
+		line-height: 50px;
+	}
+
+	.lg {
+		display: none;
+
+		@include breakpoint(large) {
+			display: block;
+		}
+	}
+
+	.md {
+		display: none;
+
+		@include breakpoint(medium) {
+			display: block;
+		}
+
+		@include breakpoint(large) {
+			display: none;
+		}
+	}
+
+	.xs {
+		display: block;
+
+		@include breakpoint(medium) {
+			display: none;
+		}
+	}
+}
+
+#contact {
+	text-align: center;
+	color: _palette(fg);
+
+	.social {
+		padding-top: 1em;
+		letter-spacing: 10px;
+
+		@include breakpoint(medium) {
+			letter-spacing: 30px;
+		}
+
+		@include breakpoint(large) {
+			letter-spacing: 40px;
+		}
+	
+		img {
+			width: 50px;
+
+			@include breakpoint(large) {
+				width: 60px;
+			}
+		}
+
+	}
+}

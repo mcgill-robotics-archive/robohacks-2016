@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Geomanist';
+    src: url('../fonts/geomanist/geomanist-regular-webfont.otf');
+    src: url('../fonts/geomanist/geomanist-regular-webfont.eot');
+	src: url('../fonts/geomanist/geomanist-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/geomanist/geomanist-regular-webfont.woff') format('woff'),
+	     url('../fonts/geomanist/geomanist-regular-webfont.ttf') format('truetype'),
+	     url('../fonts/geomanist/geomanist-regular-webfont.svg#webfont') format('svg');
+}
+
+body, input, select, textarea {
+	font-family: _font(family);
+	color: _palette(bg);
+	font-weight: _font(weight-light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: _palette(accent);
+	font-family: _font(family-heading);
+	font-weight: _font(weight);
+	text-align: center;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 1.5em;
+	font-weight: _font(weight-bold);
+	padding:1em;
+
+	@include breakpoint(large) {
+		font-size: 1.8em;
+	}
+}
+
+p+h1 {
+	padding-top: 0.8em;
+
+	@include breakpoint(large) {
+		padding-top: 2em;
+	}
+}
+
+h2 {
+	font-size: 1.1em;
+	color: _palette(bg);
+	padding:1em 0;
+	font-weight: _font(weight-bold);
+
+	@include breakpoint(large) {
+		font-size: 1.2em;
+	}
+
+}
+
+a {
+	color: _palette(accent);
+
+	&:hover, &:focus {
+		color: _palette(accent);
+	
+	}
+}
+
+p {
+	font-size: 1.1em;
+	line-height: 1.4em;
+	padding-bottom: 1em;
+
+	@include breakpoint(large) {
+		font-size: 1.2em;
+		line-height: 1.5em;
+	}
+}

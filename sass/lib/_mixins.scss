@@ -1,0 +1,27 @@
+ /// Encodes a SVG data URL so IE doesn't choke (via codepen.io/jakob-e/pen/YXXBrp).
+/// @param {string} $svg SVG data URL.
+/// @return {string} Encoded SVG data URL.
+@function svg-url($svg) {
+
+    $svg: str-replace($svg, '"', '\'');
+    $svg: str-replace($svg, '<', '%3C');
+    $svg: str-replace($svg, '>', '%3E');
+    $svg: str-replace($svg, '&', '%26');
+    $svg: str-replace($svg, '#', '%23');
+
+    @return url("data:image/svg+xml;charset=utf8,#{$svg}");
+
+}
+
+// Sass Mobile-first Breakpoint Mixin
+@mixin breakpoint($point) {
+    @if $point == medium {
+        @media (min-width: 30em)  { @content; }
+    }
+    @else if $point == large {
+        @media (min-width: 70em) { @content; }
+    }
+    @else if $point { // allows custom breakpoints
+        @media (min-width: $point) { @content; }
+    }
+}

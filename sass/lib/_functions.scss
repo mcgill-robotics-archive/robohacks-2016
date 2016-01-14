@@ -1,0 +1,18 @@
+ @function _duration($keys...) {
+	@return val($duration, $keys...);
+}
+
+/// Returns font property
+@function _font($keys...) {
+	@return val($font, $keys...);
+}
+
+/// Returns palette property
+@function _palette($keys...) {
+	@return val($palette, $keys...);
+}
+
+/// Returns size property
+@function _size($keys...) {
+	@return val($size, $keys...);
+}

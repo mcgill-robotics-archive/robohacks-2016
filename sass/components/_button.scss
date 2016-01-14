@@ -1,0 +1,20 @@
+.btn {
+	color: _palette(fg);
+	background: _palette(accent);
+	border-radius: 0;
+	width:250px;
+
+	&:hover {
+		color: _palette(fg);
+		background: lighten(_palette(accent), 5);
+	}
+
+	@include breakpoint(medium) {
+		font-size: 120%;
+	}
+
+	@include breakpoint(large) {
+		font-size: 150%;
+		width:300px;
+	}
+}
