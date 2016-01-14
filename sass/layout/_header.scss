@@ -8,7 +8,7 @@
 	}
 
 	@include breakpoint(large) {
-		padding: 9em 0 8em 0;
+		padding: 8em 0 8em 0;
 	}
 
 	h1 {
@@ -70,25 +70,15 @@
 		background-repeat: no-repeat;
 
 		@include breakpoint(medium) {
-			display: inline-block;
-			width: 150px;
-			height: 130px;
-			background-size: 100px;
-			vertical-align: top;
-		}
-
-		@include breakpoint(large) {
-			display: inline-block;
-			width: 150px;
-			height: 150px;
-			background-size: 120px;
-			vertical-align: top;
+			display: block;
+			height: 250px;
+			background-size: 200px;
 		}
 	}
 
 	.title {
 		@include breakpoint(medium) {
-			display: inline-block;
+			display: block;
 			vertical-align: middle;
 		}
 	}
