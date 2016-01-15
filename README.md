@@ -10,8 +10,9 @@ Frameworks used:
 
 Fonts used:
 
-- <a href="https://trouge.com/free-geomanist-font-download/">Geomanist</a>
-- <a href="https://www.google.com/fonts/specimen/Open+Sans">Open Sans</a>
+- Logo: <a href="https://trouge.com/free-geomanist-font-download/">Geomanist</a>
+- Heading: <a href="https://www.google.com/fonts/specimen/Inconsolata">Inconsolata</a>
+- Body: <a href="https://www.google.com/fonts/specimen/Open+Sans">Open Sans</a>
 
 ## Requirements
 
