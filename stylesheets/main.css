@@ -482,7 +482,7 @@ p {
 @media (min-width: 70em) {
   /* line 1, ../sass/layout/_header.scss */
   #header {
-    padding: 9em 0 8em 0;
+    padding: 8em 0 8em 0;
   }
 }
 /* line 14, ../sass/layout/_header.scss */
@@ -559,27 +559,15 @@ p {
 @media (min-width: 30em) {
   /* line 63, ../sass/layout/_header.scss */
   #header .logo {
-    display: inline-block;
-    width: 150px;
-    height: 130px;
-    background-size: 100px;
-    vertical-align: top;
-  }
-}
-@media (min-width: 70em) {
-  /* line 63, ../sass/layout/_header.scss */
-  #header .logo {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-size: 120px;
-    vertical-align: top;
+    display: block;
+    height: 250px;
+    background-size: 200px;
   }
 }
 @media (min-width: 30em) {
-  /* line 89, ../sass/layout/_header.scss */
+  /* line 79, ../sass/layout/_header.scss */
   #header .title {
-    display: inline-block;
+    display: block;
     vertical-align: middle;
   }
 }
