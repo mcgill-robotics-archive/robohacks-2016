@@ -1,20 +1,19 @@
 .btn {
 	color: _palette(fg);
-	background: _palette(accent);
+	background: none;
 	border-radius: 0;
 	width:250px;
+	border: 1px solid _palette(fg);
+	text-transform: uppercase;
+	@include vendor('transition', 'color #{_duration(transition)} ease-in-out, border-color #{_duration(transition)} ease-in-out' );
 
 	&:hover {
-		color: _palette(fg);
-		background: lighten(_palette(accent), 5);
+		color: _palette(accent);
+		border: 1px solid _palette(accent);
 	}
 
 	@include breakpoint(medium) {
-		font-size: 120%;
-	}
-
-	@include breakpoint(large) {
+		width:320px;
 		font-size: 150%;
-		width:300px;
 	}
 }
