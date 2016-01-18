@@ -474,7 +474,7 @@ p {
   display: table;
   height: 100vh;
   width: 100%;
-  background: url("../assets/shadow.png") repeat;
+  background: url("../img/shadow.png") repeat;
 }
 /* line 8, ../sass/layout/_header.scss */
 #header .wrapper {
@@ -504,6 +504,7 @@ p {
 #header h2 {
   font-size: 1.8em;
   padding: 15px 0 22.5px;
+  letter-spacing: 1px;
 }
 @media (min-width: 30em) {
   /* line 30, ../sass/layout/_header.scss */
@@ -512,19 +513,19 @@ p {
     padding: 22.5px 0 30px;
   }
 }
-/* line 40, ../sass/layout/_header.scss */
+/* line 41, ../sass/layout/_header.scss */
 #header h3 {
   font-size: 1.2em;
   letter-spacing: 2.8px;
 }
 @media (min-width: 30em) {
-  /* line 40, ../sass/layout/_header.scss */
+  /* line 41, ../sass/layout/_header.scss */
   #header h3 {
     font-size: 1.5em;
     letter-spacing: 5.5px;
   }
 }
-/* line 50, ../sass/layout/_header.scss */
+/* line 51, ../sass/layout/_header.scss */
 #header .logo {
   display: block;
   width: 100%;
@@ -535,7 +536,7 @@ p {
   background-repeat: no-repeat;
 }
 @media (min-width: 30em) {
-  /* line 50, ../sass/layout/_header.scss */
+  /* line 51, ../sass/layout/_header.scss */
   #header .logo {
     display: block;
     height: 225px;
@@ -582,7 +583,7 @@ p {
 /* line 13, ../sass/layout/_section.scss */
 #about {
   background-color: #ffffff;
-  background-image: url("../assets/polygon_background.png");
+  background-image: url("../img/polygon_background.png");
   background-position: center;
   background-repeat: repeat-y;
   text-align: justify;
@@ -674,8 +675,10 @@ p {
 
 /* line 1, ../sass/components/_button.scss */
 .btn {
+  font-family: "Inconsolata", monospace;
+  letter-spacing: 2.8px;
   color: #ffffff;
-  background: none;
+  background: rgba(24, 25, 25, 0.5);
   border-radius: 0;
   width: 250px;
   border: 1px solid #ffffff;
@@ -685,7 +688,7 @@ p {
   -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
-/* line 10, ../sass/components/_button.scss */
+/* line 12, ../sass/components/_button.scss */
 .btn:hover {
   color: #db2c27;
   border: 1px solid #db2c27;
