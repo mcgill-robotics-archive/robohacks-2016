@@ -7,11 +7,11 @@
 	width:250px;
 	border: 1px solid _palette(fg);
 	text-transform: uppercase;
-	@include vendor('transition', 'color #{_duration(transition)} ease-in-out, border-color #{_duration(transition)} ease-in-out' );
+	@include vendor('transition', 'color #{_duration(transition)} ease-in-out, background #{_duration(transition)} ease-in-out' );
 
 	&:hover {
-		color: _palette(accent);
-		border: 1px solid _palette(accent);
+		color: _palette(bg);
+		background: _palette(fg);
 	}
 
 	@include breakpoint(medium) {

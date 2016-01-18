@@ -13,6 +13,11 @@
 #about {
 	text-align: justify;
 	background-color: _palette(fg);
+
+}
+
+#faq {
+	background-color: darken(_palette(fg), 5);
 	background-image: url('../img/polygon_background.png');
 	background-position: center;
 	background-repeat: repeat-y;
@@ -24,11 +29,6 @@
 		background-repeat: repeat-y, repeat-y;
 		background-size: auto, auto;
 	}
-}
-
-#faq {
-	background-color: darken(_palette(fg), 3);
-
 	h2 {
 		text-align: left;
 	}
@@ -39,9 +39,8 @@
 	background-color: lighten(_palette(bg), 2);
 	text-align: center;
 
-	.container {
-		letter-spacing: 50px;
-		line-height: 50px;
+	.lg, .md, .xs {
+		margin: 0 auto;
 	}
 
 	.lg {
@@ -49,6 +48,10 @@
 
 		@include breakpoint(large) {
 			display: block;
+			width:70%;
+			min-width: 1000px;
+			letter-spacing: 80px;
+			line-height: 70px;
 		}
 	}
 
@@ -57,6 +60,9 @@
 
 		@include breakpoint(medium) {
 			display: block;
+			width:90%;
+			letter-spacing: 70px;
+			line-height: 60px;
 		}
 
 		@include breakpoint(large) {
@@ -66,6 +72,8 @@
 
 	.xs {
 		display: block;
+		width:90%;
+		line-height: 70px;
 
 		@include breakpoint(medium) {
 			display: none;

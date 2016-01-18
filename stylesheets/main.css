@@ -434,7 +434,7 @@ p + h1 {
 
 /* line 44, ../sass/base/_typography.scss */
 h2 {
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #181919;
   padding: 1em 0;
   font-weight: bold;
@@ -442,7 +442,7 @@ h2 {
 @media (min-width: 70em) {
   /* line 44, ../sass/base/_typography.scss */
   h2 {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 }
 
@@ -588,24 +588,24 @@ p {
 #about {
   text-align: justify;
   background-color: #ffffff;
+}
+
+/* line 19, ../sass/layout/_section.scss */
+#faq {
+  background-color: #f2f2f2;
   background-image: url("../img/polygon_background.png");
   background-position: center;
   background-repeat: repeat-y;
   background-size: auto;
 }
 @media (min-width: 1550px) {
-  /* line 13, ../sass/layout/_section.scss */
-  #about {
+  /* line 19, ../sass/layout/_section.scss */
+  #faq {
     background-image: url("../img/bg_left.png"), url("../img/bg_right.png");
     background-position: left, right;
     background-repeat: repeat-y, repeat-y;
     background-size: auto, auto;
   }
-}
-
-/* line 29, ../sass/layout/_section.scss */
-#faq {
-  background-color: #f7f7f7;
 }
 /* line 32, ../sass/layout/_section.scss */
 #faq h2 {
@@ -619,69 +619,77 @@ p {
   text-align: center;
 }
 /* line 42, ../sass/layout/_section.scss */
-#sponsors .container {
-  letter-spacing: 50px;
-  line-height: 50px;
+#sponsors .lg, #sponsors .md, #sponsors .xs {
+  margin: 0 auto;
 }
-/* line 47, ../sass/layout/_section.scss */
+/* line 46, ../sass/layout/_section.scss */
 #sponsors .lg {
   display: none;
 }
 @media (min-width: 70em) {
-  /* line 47, ../sass/layout/_section.scss */
+  /* line 46, ../sass/layout/_section.scss */
   #sponsors .lg {
     display: block;
+    width: 70%;
+    min-width: 1000px;
+    letter-spacing: 80px;
+    line-height: 70px;
   }
 }
-/* line 55, ../sass/layout/_section.scss */
+/* line 58, ../sass/layout/_section.scss */
 #sponsors .md {
   display: none;
 }
 @media (min-width: 30em) {
-  /* line 55, ../sass/layout/_section.scss */
+  /* line 58, ../sass/layout/_section.scss */
   #sponsors .md {
     display: block;
+    width: 90%;
+    letter-spacing: 70px;
+    line-height: 60px;
   }
 }
 @media (min-width: 70em) {
-  /* line 55, ../sass/layout/_section.scss */
+  /* line 58, ../sass/layout/_section.scss */
   #sponsors .md {
     display: none;
   }
 }
-/* line 67, ../sass/layout/_section.scss */
+/* line 73, ../sass/layout/_section.scss */
 #sponsors .xs {
   display: block;
+  width: 90%;
+  line-height: 70px;
 }
 @media (min-width: 30em) {
-  /* line 67, ../sass/layout/_section.scss */
+  /* line 73, ../sass/layout/_section.scss */
   #sponsors .xs {
     display: none;
   }
 }
 
-/* line 76, ../sass/layout/_section.scss */
+/* line 84, ../sass/layout/_section.scss */
 #contact {
   text-align: center;
   color: #ffffff;
 }
-/* line 80, ../sass/layout/_section.scss */
+/* line 88, ../sass/layout/_section.scss */
 #contact .social {
   padding-top: 1em;
   letter-spacing: 20px;
 }
 @media (min-width: 30em) {
-  /* line 80, ../sass/layout/_section.scss */
+  /* line 88, ../sass/layout/_section.scss */
   #contact .social {
     letter-spacing: 40px;
   }
 }
-/* line 88, ../sass/layout/_section.scss */
+/* line 96, ../sass/layout/_section.scss */
 #contact .social img {
   width: 50px;
 }
 @media (min-width: 70em) {
-  /* line 88, ../sass/layout/_section.scss */
+  /* line 96, ../sass/layout/_section.scss */
   #contact .social img {
     width: 60px;
   }
@@ -697,15 +705,15 @@ p {
   width: 250px;
   border: 1px solid #ffffff;
   text-transform: uppercase;
-  -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
 }
 /* line 12, ../sass/components/_button.scss */
 .btn:hover {
-  color: #db2c27;
-  border: 1px solid #db2c27;
+  color: #181919;
+  background: #ffffff;
 }
 @media (min-width: 30em) {
   /* line 1, ../sass/components/_button.scss */
@@ -720,6 +728,7 @@ p {
   position: absolute;
   top: 0;
   z-index: -1;
+  text-align: center;
 }
 
 @keyframes pulse {
@@ -736,7 +745,7 @@ p {
     stroke: #5c1524;
   }
 }
-/* line 15, ../sass/components/_svg.scss */
+/* line 16, ../sass/components/_svg.scss */
 #path01 {
   stroke: #5c1524;
   fill: none;
@@ -752,14 +761,36 @@ p {
   -webkit-animation-duration: 8s;
   -ms-animation-duration: 8s;
   animation-duration: 8s;
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  -ms-animation-delay: 1s;
-  animation-delay: 1s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  -ms-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
-/* line 15, ../sass/components/_svg.scss */
+/* line 16, ../sass/components/_svg.scss */
 #path02 {
+  stroke: #5c1524;
+  fill: none;
+  -moz-animation-name: pulse;
+  -webkit-animation-name: pulse;
+  -ms-animation-name: pulse;
+  animation-name: pulse;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -moz-animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  -ms-animation-duration: 5s;
+  animation-duration: 5s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  -ms-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+/* line 16, ../sass/components/_svg.scss */
+#path03 {
   stroke: #5c1524;
   fill: none;
   -moz-animation-name: pulse;
@@ -780,8 +811,30 @@ p {
   animation-delay: 1.5s;
 }
 
-/* line 15, ../sass/components/_svg.scss */
-#path03 {
+/* line 16, ../sass/components/_svg.scss */
+#path04 {
+  stroke: #5c1524;
+  fill: none;
+  -moz-animation-name: pulse;
+  -webkit-animation-name: pulse;
+  -ms-animation-name: pulse;
+  animation-name: pulse;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -moz-animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  -ms-animation-duration: 5s;
+  animation-duration: 5s;
+  -moz-animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+  -ms-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+/* line 16, ../sass/components/_svg.scss */
+#path05 {
   stroke: #5c1524;
   fill: none;
   -moz-animation-name: pulse;
@@ -796,14 +849,36 @@ p {
   -webkit-animation-duration: 8s;
   -ms-animation-duration: 8s;
   animation-duration: 8s;
-  -moz-animation-delay: 3s;
-  -webkit-animation-delay: 3s;
-  -ms-animation-delay: 3s;
-  animation-delay: 3s;
+  -moz-animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+  -ms-animation-delay: 2.5s;
+  animation-delay: 2.5s;
 }
 
-/* line 15, ../sass/components/_svg.scss */
-#path04 {
+/* line 16, ../sass/components/_svg.scss */
+#path06 {
+  stroke: #5c1524;
+  fill: none;
+  -moz-animation-name: pulse;
+  -webkit-animation-name: pulse;
+  -ms-animation-name: pulse;
+  animation-name: pulse;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -moz-animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  -ms-animation-duration: 5s;
+  animation-duration: 5s;
+  -moz-animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+  -ms-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+/* line 16, ../sass/components/_svg.scss */
+#path07 {
   stroke: #5c1524;
   fill: none;
   -moz-animation-name: pulse;
@@ -824,73 +899,7 @@ p {
   animation-delay: 3.5s;
 }
 
-/* line 15, ../sass/components/_svg.scss */
-#path05 {
-  stroke: #5c1524;
-  fill: none;
-  -moz-animation-name: pulse;
-  -webkit-animation-name: pulse;
-  -ms-animation-name: pulse;
-  animation-name: pulse;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -moz-animation-duration: 8s;
-  -webkit-animation-duration: 8s;
-  -ms-animation-duration: 8s;
-  animation-duration: 8s;
-  -moz-animation-delay: 5s;
-  -webkit-animation-delay: 5s;
-  -ms-animation-delay: 5s;
-  animation-delay: 5s;
-}
-
-/* line 15, ../sass/components/_svg.scss */
-#path06 {
-  stroke: #5c1524;
-  fill: none;
-  -moz-animation-name: pulse;
-  -webkit-animation-name: pulse;
-  -ms-animation-name: pulse;
-  animation-name: pulse;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -moz-animation-duration: 8s;
-  -webkit-animation-duration: 8s;
-  -ms-animation-duration: 8s;
-  animation-duration: 8s;
-  -moz-animation-delay: 5.5s;
-  -webkit-animation-delay: 5.5s;
-  -ms-animation-delay: 5.5s;
-  animation-delay: 5.5s;
-}
-
-/* line 15, ../sass/components/_svg.scss */
-#path07 {
-  stroke: #5c1524;
-  fill: none;
-  -moz-animation-name: pulse;
-  -webkit-animation-name: pulse;
-  -ms-animation-name: pulse;
-  animation-name: pulse;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -moz-animation-duration: 8s;
-  -webkit-animation-duration: 8s;
-  -ms-animation-duration: 8s;
-  animation-duration: 8s;
-  -moz-animation-delay: 7s;
-  -webkit-animation-delay: 7s;
-  -ms-animation-delay: 7s;
-  animation-delay: 7s;
-}
-
-/* line 15, ../sass/components/_svg.scss */
+/* line 16, ../sass/components/_svg.scss */
 #path08 {
   stroke: #5c1524;
   fill: none;
@@ -902,12 +911,12 @@ p {
   -webkit-animation-iteration-count: infinite;
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -moz-animation-duration: 8s;
-  -webkit-animation-duration: 8s;
-  -ms-animation-duration: 8s;
-  animation-duration: 8s;
-  -moz-animation-delay: 7.5s;
-  -webkit-animation-delay: 7.5s;
-  -ms-animation-delay: 7.5s;
-  animation-delay: 7.5s;
+  -moz-animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  -ms-animation-duration: 5s;
+  animation-duration: 5s;
+  -moz-animation-delay: 3.5s;
+  -webkit-animation-delay: 3.5s;
+  -ms-animation-delay: 3.5s;
+  animation-delay: 3.5s;
 }

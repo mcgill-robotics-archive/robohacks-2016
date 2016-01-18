@@ -42,13 +42,13 @@ p+h1 {
 }
 
 h2 {
-	font-size: 1.1em;
+	font-size: 1.2em;
 	color: _palette(bg);
 	padding:1em 0;
 	font-weight: _font(weight-bold);
 
 	@include breakpoint(large) {
-		font-size: 1.2em;
+		font-size: 1.3em;
 	}
 
 }
