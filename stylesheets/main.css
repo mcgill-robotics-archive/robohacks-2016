@@ -510,22 +510,26 @@ p {
   /* line 30, ../sass/layout/_header.scss */
   #header h2 {
     font-size: 2em;
-    padding: 22.5px 0 30px;
+    padding: 30px 0 37.5px;
   }
 }
-/* line 41, ../sass/layout/_header.scss */
+/* line 40, ../sass/layout/_header.scss */
+#header h2 sup {
+  font-size: 0.6em;
+}
+/* line 45, ../sass/layout/_header.scss */
 #header h3 {
   font-size: 1.2em;
   letter-spacing: 2.8px;
 }
 @media (min-width: 30em) {
-  /* line 41, ../sass/layout/_header.scss */
+  /* line 45, ../sass/layout/_header.scss */
   #header h3 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     letter-spacing: 5.5px;
   }
 }
-/* line 51, ../sass/layout/_header.scss */
+/* line 56, ../sass/layout/_header.scss */
 #header .logo {
   display: block;
   width: 100%;
@@ -536,7 +540,7 @@ p {
   background-repeat: no-repeat;
 }
 @media (min-width: 30em) {
-  /* line 51, ../sass/layout/_header.scss */
+  /* line 56, ../sass/layout/_header.scss */
   #header .logo {
     display: block;
     height: 225px;

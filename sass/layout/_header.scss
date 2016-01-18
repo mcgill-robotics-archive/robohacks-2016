@@ -34,7 +34,11 @@
 
 		@include breakpoint(medium) {
 			font-size: 2em;
-			padding:_size(header)*1.5 0 _size(header)*2;
+			padding:_size(header)*2 0 _size(header)*2.5;
+		}
+
+		sup {
+			font-size: 0.6em;
 		}
 	}
 
@@ -43,8 +47,9 @@
 		letter-spacing: 2.8px;
 
 		@include breakpoint(medium) {
-			font-size:1.5em;
+			font-size:1.4em;
 			letter-spacing: 5.5px;
+
 		}
 	}
 
