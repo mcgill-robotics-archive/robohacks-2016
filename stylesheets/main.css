@@ -586,92 +586,102 @@ p {
 
 /* line 13, ../sass/layout/_section.scss */
 #about {
+  text-align: justify;
   background-color: #ffffff;
   background-image: url("../img/polygon_background.png");
   background-position: center;
   background-repeat: repeat-y;
-  text-align: justify;
+  background-size: auto;
+}
+@media (min-width: 1550px) {
+  /* line 13, ../sass/layout/_section.scss */
+  #about {
+    background-image: url("../img/bg_left.png"), url("../img/bg_right.png");
+    background-position: left, right;
+    background-repeat: repeat-y, repeat-y;
+    background-size: auto, auto;
+  }
 }
 
-/* line 21, ../sass/layout/_section.scss */
+/* line 29, ../sass/layout/_section.scss */
 #faq {
   background-color: #f7f7f7;
 }
-/* line 24, ../sass/layout/_section.scss */
+/* line 32, ../sass/layout/_section.scss */
 #faq h2 {
   text-align: left;
 }
 
-/* line 29, ../sass/layout/_section.scss */
+/* line 37, ../sass/layout/_section.scss */
 #sponsors {
   color: #ffffff;
   background-color: #1d1e1e;
   text-align: center;
 }
-/* line 34, ../sass/layout/_section.scss */
+/* line 42, ../sass/layout/_section.scss */
 #sponsors .container {
   letter-spacing: 50px;
   line-height: 50px;
 }
-/* line 39, ../sass/layout/_section.scss */
+/* line 47, ../sass/layout/_section.scss */
 #sponsors .lg {
   display: none;
 }
 @media (min-width: 70em) {
-  /* line 39, ../sass/layout/_section.scss */
+  /* line 47, ../sass/layout/_section.scss */
   #sponsors .lg {
     display: block;
   }
 }
-/* line 47, ../sass/layout/_section.scss */
+/* line 55, ../sass/layout/_section.scss */
 #sponsors .md {
   display: none;
 }
 @media (min-width: 30em) {
-  /* line 47, ../sass/layout/_section.scss */
+  /* line 55, ../sass/layout/_section.scss */
   #sponsors .md {
     display: block;
   }
 }
 @media (min-width: 70em) {
-  /* line 47, ../sass/layout/_section.scss */
+  /* line 55, ../sass/layout/_section.scss */
   #sponsors .md {
     display: none;
   }
 }
-/* line 59, ../sass/layout/_section.scss */
+/* line 67, ../sass/layout/_section.scss */
 #sponsors .xs {
   display: block;
 }
 @media (min-width: 30em) {
-  /* line 59, ../sass/layout/_section.scss */
+  /* line 67, ../sass/layout/_section.scss */
   #sponsors .xs {
     display: none;
   }
 }
 
-/* line 68, ../sass/layout/_section.scss */
+/* line 76, ../sass/layout/_section.scss */
 #contact {
   text-align: center;
   color: #ffffff;
 }
-/* line 72, ../sass/layout/_section.scss */
+/* line 80, ../sass/layout/_section.scss */
 #contact .social {
   padding-top: 1em;
   letter-spacing: 20px;
 }
 @media (min-width: 30em) {
-  /* line 72, ../sass/layout/_section.scss */
+  /* line 80, ../sass/layout/_section.scss */
   #contact .social {
     letter-spacing: 40px;
   }
 }
-/* line 80, ../sass/layout/_section.scss */
+/* line 88, ../sass/layout/_section.scss */
 #contact .social img {
   width: 50px;
 }
 @media (min-width: 70em) {
-  /* line 80, ../sass/layout/_section.scss */
+  /* line 88, ../sass/layout/_section.scss */
   #contact .social img {
     width: 60px;
   }

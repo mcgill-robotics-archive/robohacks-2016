@@ -11,11 +11,19 @@
 }
 
 #about {
+	text-align: justify;
 	background-color: _palette(fg);
 	background-image: url('../img/polygon_background.png');
 	background-position: center;
 	background-repeat: repeat-y;
-	text-align: justify;
+	background-size: auto;
+
+	@include breakpoint(1550px) {
+		background-image: url('../img/bg_left.png'), url('../img/bg_right.png');
+		background-position: left, right;
+		background-repeat: repeat-y, repeat-y;
+		background-size: auto, auto;
+	}
 }
 
 #faq {
