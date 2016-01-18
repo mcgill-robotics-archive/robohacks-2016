@@ -1,0 +1,29 @@
+#svg {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+@keyframes pulse {
+    0% { stroke:#5c1524; }
+    10% { stroke:#db2c27; }
+    20% { stroke:#5c1524; }
+    100% { stroke:#5c1524; }
+}
+
+@for $i from 1 through 8 {
+  #path0#{$i} {
+    stroke:#5c1524;
+    fill:none;
+    @include vendor('animation-name', 'pulse');
+    @include vendor('animation-iteration-count', 'infinite');
+    @if $i % 2 != 0 {
+      @include vendor('animation-duration', '8s');
+      @include vendor('animation-delay', #{$i}s);
+    }
+    @else {
+      @include vendor('animation-duration', '8s');
+      @include vendor('animation-delay', #{$i - 0.5}s);
+    }
+  }
+}

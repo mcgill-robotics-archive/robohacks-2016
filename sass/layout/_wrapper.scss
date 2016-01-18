@@ -1,0 +1,15 @@
+.wrapper {
+	margin: 0 auto;
+	width: 80%;
+
+	@include breakpoint(medium) {
+		width: 80%;
+	}
+
+	@include breakpoint(large) {
+		width: 70%;
+		max-width: 1000px;
+	}
+
+
+}

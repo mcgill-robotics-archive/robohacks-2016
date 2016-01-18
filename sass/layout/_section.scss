@@ -12,6 +12,10 @@
 
 #about {
 	background-color: _palette(fg);
+	background-image: url('../assets/polygon_background.png');
+	background-position: center;
+	background-repeat: repeat-y;
+	text-align: justify;
 }
 
 #faq {
@@ -67,13 +71,9 @@
 
 	.social {
 		padding-top: 1em;
-		letter-spacing: 10px;
+		letter-spacing: 20px;
 
 		@include breakpoint(medium) {
-			letter-spacing: 30px;
-		}
-
-		@include breakpoint(large) {
 			letter-spacing: 40px;
 		}
 	

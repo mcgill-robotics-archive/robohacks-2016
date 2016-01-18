@@ -1,3 +1,5 @@
+@import "compass/css3/text-shadow";
+
 @import 'lib/vars';
 @import 'lib/functions';
 @import 'lib/mixins';
@@ -18,3 +20,4 @@
 @import 'layout/footer';
 
 @import 'components/button';
+@import 'components/svg';
