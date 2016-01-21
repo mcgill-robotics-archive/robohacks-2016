@@ -765,12 +765,22 @@
 
     </div>
     <div id="header">
-      <div class="wrapper">
-        <div class="logo"></div>
-        <h1>Robohacks</h1>
-        <h3>McGill University</h3>
-        <h2>March 19-20<sup>th</sup> 2016</h2>
-        <a class="btn btn-lg" href="sign-up.html" role="button">Join Mailing List</a>
+      <div class="table-row">
+        <div class="title">
+          <div class="logo"></div>
+          <h1>Robohacks</h1>
+          <h3>McGill University</h3>
+          <h2>March 19-20<sup>th</sup> 2016</h2>
+          <a class="btn btn-lg" href="sign-up.html" role="button">Join Mailing List</a>
+        </div>
+      </div>
+
+      <div class="table-row">
+        <div class="more">
+          <a href="#about">
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+          </a>
+        </div>
       </div>
     </div>
     <div id="about" class="section">
@@ -853,16 +863,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script>
-      // Set svg to width and height of window
-      var svg = $('#svg').find('svg')[0];
-      svg.setAttribute('width',  $(window).width() + 'px');
-      svg.setAttribute('height',  $(window).height() + 'px');
-
-      // Stop judging me
-      $( window ).resize(function() {
-        svg.setAttribute('width',  $(window).width() + 'px');
-      });
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>

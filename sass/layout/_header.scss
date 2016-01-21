@@ -3,13 +3,6 @@
 	display: table;
 	height: 100vh;
 	width: 100%;
-	background: url('../img/shadow.png') repeat;
-
-	.wrapper {
-		display: table-cell;
-		vertical-align: middle;
-		padding-bottom: 2%;
-	}
 
 	h1, h2, h3 {
 		color: _palette(fg);
@@ -50,6 +43,37 @@
 			font-size:1.4em;
 			letter-spacing: 5.5px;
 
+		}
+	}
+
+	.table-row {
+		display: table-row;
+	}
+
+	.title {
+		display: table-cell;
+		vertical-align: middle;
+		text-shadow: 0px 0px 30px #000;
+	}
+
+	.more {
+		display: table-cell;
+		vertical-align: bottom;
+		padding-bottom: 10px;
+		color: _palette(fg);
+		line-height: 1.5em;
+		font-size: 1.5em;
+		height:10px;
+
+		a {
+			color: rgba(255, 255, 255, 0.5);
+			@include vendor('transition', 'color #{_duration(transition)} ease-in-out' );
+		}
+
+		a:hover, a:focus {
+			text-decoration: none;
+			outline: none;
+			color: _palette(fg);
 		}
 	}
 
