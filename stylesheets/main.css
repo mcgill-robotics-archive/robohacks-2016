@@ -701,8 +701,8 @@ p {
   /* line 46, ../sass/layout/_section.scss */
   #sponsors .lg {
     display: block;
-    width: 70%;
-    min-width: 1000px;
+    width: 90%;
+    max-width: 1150px;
     letter-spacing: 80px;
     line-height: 70px;
   }
