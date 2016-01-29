@@ -12,14 +12,17 @@ var robot = $('#Robot'),
 
 skrollr.init({
 	beforerender: function(o){
-		if(o.curTop > lastStep + 10){
-			if(curFrm>=9){curFrm=0;}
+		if (curFrm >= 9) {
+			return;
+		}
+		if (o.curTop > lastStep + 2) {
+			// if(curFrm>=9){curFrm=0;}
 			robot.css('background-position', pLocs[curFrm++]+ 'px 0px');
-			lastStep=o.curTop;
-		}else if(o.curTop < lastStep - 10){
-			if(curFrm<=-1){curFrm=9;}
-			robot.css('background-position', pLocs[curFrm--] + 'px 0px');
 			lastStep = o.curTop;
+		// } else if (o.curTop < lastStep - 2){
+		// 	// if (curFrm<=-1){curFrm=9;}
+		// 	robot.css('background-position', pLocs[curFrm--] + 'px 0px');
+		// 	lastStep = o.curTop;
 		}
 	}
 });
