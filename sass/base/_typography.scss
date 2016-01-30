@@ -34,7 +34,7 @@ h1 {
 }
 
 p+h1 {
-	padding-top: 0.8em;
+	padding-top: 1em;
 
 	@include breakpoint(large) {
 		padding-top: 2em;
@@ -58,7 +58,7 @@ a {
 
 	&:hover, &:focus {
 		color: _palette(accent);
-	
+
 	}
 }
 
