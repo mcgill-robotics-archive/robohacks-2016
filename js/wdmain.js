@@ -8,7 +8,7 @@ skrollr.init({
 		if (curFrm >= 9) {
 			return;
 		}
-		if (o.curTop > lastStep + 2) {
+		if (o.curTop > lastStep + 5) {
 			robot.css('background-position', pLocs[curFrm++]+ 'px 0px');
 			lastStep = o.curTop;
 		}
