@@ -1,0 +1,105 @@
+.section {
+	padding: 2.5em 0 3.5em 0;
+
+	@include breakpoint(medium) {
+		padding: 3.5em 0 5em 0;
+	}
+
+	@include breakpoint(large) {
+		padding: 5em 0 6.5em 0;
+	}
+}
+
+#about {
+	text-align: justify;
+	background-color: _palette(fg);
+
+}
+
+#faq {
+	background-color: darken(_palette(fg), 5);
+	background-image: url('../img/polygon_background.png');
+	background-position: center;
+	background-repeat: repeat-y;
+	background-size: auto;
+
+	@include breakpoint(1550px) {
+		background-image: url('../img/bg_left.png'), url('../img/bg_right.png');
+		background-position: left, right;
+		background-repeat: repeat-y, repeat-y;
+		background-size: auto, auto;
+	}
+	h2 {
+		text-align: left;
+	}
+}
+
+#sponsors {
+	color: _palette(fg);
+	background-color: lighten(_palette(bg), 2);
+	text-align: center;
+
+	.lg, .md, .xs {
+		margin: 0 auto;
+	}
+
+	.lg {
+		display: none;
+
+		@include breakpoint(large) {
+			display: block;
+			width:90%;
+			max-width: 1150px;
+			letter-spacing: 80px;
+			line-height: 70px;
+		}
+	}
+
+	.md {
+		display: none;
+
+		@include breakpoint(medium) {
+			display: block;
+			width:90%;
+			letter-spacing: 70px;
+			line-height: 60px;
+		}
+
+		@include breakpoint(large) {
+			display: none;
+		}
+	}
+
+	.xs {
+		display: block;
+		width:90%;
+		line-height: 70px;
+
+		@include breakpoint(medium) {
+			display: none;
+		}
+	}
+}
+
+#contact {
+	text-align: center;
+	color: _palette(fg);
+
+	.social {
+		padding-top: 1em;
+		letter-spacing: 20px;
+
+		@include breakpoint(medium) {
+			letter-spacing: 40px;
+		}
+
+		img {
+			width: 50px;
+
+			@include breakpoint(large) {
+				width: 60px;
+			}
+		}
+
+	}
+}

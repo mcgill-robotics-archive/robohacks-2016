@@ -1,0 +1,22 @@
+// Prevents scrollbar from overlapping content.
+body {
+	-ms-overflow-style: scrollbar;
+}
+
+//Required for IEMobile.
+@-ms-viewport {
+	width: device-width;
+}
+
+// Force page width to be >=320px.
+@include breakpoint(xsmall) {
+	html, body {
+		min-width: 320px;
+		height: 100%;
+	}
+}
+
+body {
+	background: _palette(bg);
+	font-size: 16px;
+}

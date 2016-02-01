@@ -1,0 +1,960 @@
+/* Reset */
+/* line 512, ../sass/lib/_skel.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 512, ../sass/lib/_skel.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 512, ../sass/lib/_skel.scss */
+body {
+  line-height: 1;
+}
+
+/* line 512, ../sass/lib/_skel.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 512, ../sass/lib/_skel.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 512, ../sass/lib/_skel.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 512, ../sass/lib/_skel.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 512, ../sass/lib/_skel.scss */
+body {
+  -webkit-text-size-adjust: none;
+}
+
+/* Box Model */
+/* line 167, ../sass/lib/_skel.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Grid */
+/* line 429, ../sass/lib/_skel.scss */
+.row {
+  border-bottom: solid 1px transparent;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 436, ../sass/lib/_skel.scss */
+.row > * {
+  float: left;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 443, ../sass/lib/_skel.scss */
+.row:after, .row:before {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+/* line 450, ../sass/lib/_skel.scss */
+.row.uniform > * > :first-child {
+  margin-top: 0;
+}
+
+/* line 454, ../sass/lib/_skel.scss */
+.row.uniform > * > :last-child {
+  margin-bottom: 0;
+}
+
+/* line 297, ../sass/lib/_skel.scss */
+.row.\30 \25  > * {
+  padding: 0 0 0 0em;
+}
+
+/* line 298, ../sass/lib/_skel.scss */
+.row.\30 \25 {
+  margin: 0 0 -1px 0em;
+}
+
+/* line 301, ../sass/lib/_skel.scss */
+.row.uniform.\30 \25  > * {
+  padding: 0em 0 0 0em;
+}
+
+/* line 302, ../sass/lib/_skel.scss */
+.row.uniform.\30 \25 {
+  margin: 0em 0 -1px 0em;
+}
+
+/* line 297, ../sass/lib/_skel.scss */
+.row > * {
+  padding: 0 0 0 1.5em;
+}
+
+/* line 298, ../sass/lib/_skel.scss */
+.row {
+  margin: 0 0 -1px -1.5em;
+}
+
+/* line 301, ../sass/lib/_skel.scss */
+.row.uniform > * {
+  padding: 1.5em 0 0 1.5em;
+}
+
+/* line 302, ../sass/lib/_skel.scss */
+.row.uniform {
+  margin: -1.5em 0 -1px -1.5em;
+}
+
+/* line 297, ../sass/lib/_skel.scss */
+.row.\32 00\25  > * {
+  padding: 0 0 0 3em;
+}
+
+/* line 298, ../sass/lib/_skel.scss */
+.row.\32 00\25 {
+  margin: 0 0 -1px -3em;
+}
+
+/* line 301, ../sass/lib/_skel.scss */
+.row.uniform.\32 00\25  > * {
+  padding: 3em 0 0 3em;
+}
+
+/* line 302, ../sass/lib/_skel.scss */
+.row.uniform.\32 00\25 {
+  margin: -3em 0 -1px -3em;
+}
+
+/* line 297, ../sass/lib/_skel.scss */
+.row.\31 50\25  > * {
+  padding: 0 0 0 2.25em;
+}
+
+/* line 298, ../sass/lib/_skel.scss */
+.row.\31 50\25 {
+  margin: 0 0 -1px -2.25em;
+}
+
+/* line 301, ../sass/lib/_skel.scss */
+.row.uniform.\31 50\25  > * {
+  padding: 2.25em 0 0 2.25em;
+}
+
+/* line 302, ../sass/lib/_skel.scss */
+.row.uniform.\31 50\25 {
+  margin: -2.25em 0 -1px -2.25em;
+}
+
+/* line 297, ../sass/lib/_skel.scss */
+.row.\35 0\25  > * {
+  padding: 0 0 0 0.75em;
+}
+
+/* line 298, ../sass/lib/_skel.scss */
+.row.\35 0\25 {
+  margin: 0 0 -1px -0.75em;
+}
+
+/* line 301, ../sass/lib/_skel.scss */
+.row.uniform.\35 0\25  > * {
+  padding: 0.75em 0 0 0.75em;
+}
+
+/* line 302, ../sass/lib/_skel.scss */
+.row.uniform.\35 0\25 {
+  margin: -0.75em 0 -1px -0.75em;
+}
+
+/* line 297, ../sass/lib/_skel.scss */
+.row.\32 5\25  > * {
+  padding: 0 0 0 0.375em;
+}
+
+/* line 298, ../sass/lib/_skel.scss */
+.row.\32 5\25 {
+  margin: 0 0 -1px -0.375em;
+}
+
+/* line 301, ../sass/lib/_skel.scss */
+.row.uniform.\32 5\25  > * {
+  padding: 0.375em 0 0 0.375em;
+}
+
+/* line 302, ../sass/lib/_skel.scss */
+.row.uniform.\32 5\25 {
+  margin: -0.375em 0 -1px -0.375em;
+}
+
+/* line 232, ../sass/lib/_skel.scss */
+.\31 2u, .\31 2u\24 {
+  width: 100%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 233, ../sass/lib/_skel.scss */
+.\31 1u, .\31 1u\24 {
+  width: 91.6666666667%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 234, ../sass/lib/_skel.scss */
+.\31 0u, .\31 0u\24 {
+  width: 83.3333333333%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 235, ../sass/lib/_skel.scss */
+.\39 u, .\39 u\24 {
+  width: 75%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 236, ../sass/lib/_skel.scss */
+.\38 u, .\38 u\24 {
+  width: 66.6666666667%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 237, ../sass/lib/_skel.scss */
+.\37 u, .\37 u\24 {
+  width: 58.3333333333%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 238, ../sass/lib/_skel.scss */
+.\36 u, .\36 u\24 {
+  width: 50%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 239, ../sass/lib/_skel.scss */
+.\35 u, .\35 u\24 {
+  width: 41.6666666667%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 240, ../sass/lib/_skel.scss */
+.\34 u, .\34 u\24 {
+  width: 33.3333333333%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 241, ../sass/lib/_skel.scss */
+.\33 u, .\33 u\24 {
+  width: 25%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 242, ../sass/lib/_skel.scss */
+.\32 u, .\32 u\24 {
+  width: 16.6666666667%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 243, ../sass/lib/_skel.scss */
+.\31 u, .\31 u\24 {
+  width: 8.3333333333%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 245, ../sass/lib/_skel.scss */
+.\31 2u\24  + *,
+.\31 1u\24  + *,
+.\31 0u\24  + *,
+.\39 u\24  + *,
+.\38 u\24  + *,
+.\37 u\24  + *,
+.\36 u\24  + *,
+.\35 u\24  + *,
+.\34 u\24  + *,
+.\33 u\24  + *,
+.\32 u\24  + *,
+.\31 u\24  + * {
+  clear: left;
+}
+
+/* line 260, ../sass/lib/_skel.scss */
+.\-11u {
+  margin-left: 91.66667%;
+}
+
+/* line 261, ../sass/lib/_skel.scss */
+.\-10u {
+  margin-left: 83.33333%;
+}
+
+/* line 262, ../sass/lib/_skel.scss */
+.\-9u {
+  margin-left: 75%;
+}
+
+/* line 263, ../sass/lib/_skel.scss */
+.\-8u {
+  margin-left: 66.66667%;
+}
+
+/* line 264, ../sass/lib/_skel.scss */
+.\-7u {
+  margin-left: 58.33333%;
+}
+
+/* line 265, ../sass/lib/_skel.scss */
+.\-6u {
+  margin-left: 50%;
+}
+
+/* line 266, ../sass/lib/_skel.scss */
+.\-5u {
+  margin-left: 41.66667%;
+}
+
+/* line 267, ../sass/lib/_skel.scss */
+.\-4u {
+  margin-left: 33.33333%;
+}
+
+/* line 268, ../sass/lib/_skel.scss */
+.\-3u {
+  margin-left: 25%;
+}
+
+/* line 269, ../sass/lib/_skel.scss */
+.\-2u {
+  margin-left: 16.66667%;
+}
+
+/* line 270, ../sass/lib/_skel.scss */
+.\-1u {
+  margin-left: 8.33333%;
+}
+
+/* line 2, ../sass/base/_page.scss */
+body {
+  -ms-overflow-style: scrollbar;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+@media (min-width: xsmall) {
+  /* line 13, ../sass/base/_page.scss */
+  html, body {
+    min-width: 320px;
+    height: 100%;
+  }
+}
+/* line 19, ../sass/base/_page.scss */
+body {
+  background: #181919;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  src: url("../fonts/geomanist/geomanist-regular-webfont.otf");
+  src: url("../fonts/geomanist/geomanist-regular-webfont.eot");
+  src: url("../fonts/geomanist/geomanist-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/geomanist/geomanist-regular-webfont.woff") format("woff"), url("../fonts/geomanist/geomanist-regular-webfont.ttf") format("truetype"), url("../fonts/geomanist/geomanist-regular-webfont.svg#webfont") format("svg");
+}
+/* line 11, ../sass/base/_typography.scss */
+body, input, select, textarea {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  color: #181919;
+  font-weight: 300;
+}
+
+/* line 17, ../sass/base/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Inconsolata", monospace;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* line 25, ../sass/base/_typography.scss */
+h1 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 1em;
+}
+@media (min-width: 30em) {
+  /* line 25, ../sass/base/_typography.scss */
+  h1 {
+    font-size: 2em;
+  }
+}
+
+/* line 36, ../sass/base/_typography.scss */
+p + h1 {
+  padding-top: 0.8em;
+}
+@media (min-width: 70em) {
+  /* line 36, ../sass/base/_typography.scss */
+  p + h1 {
+    padding-top: 2em;
+  }
+}
+
+/* line 44, ../sass/base/_typography.scss */
+h2 {
+  font-size: 1.2em;
+  color: #181919;
+  padding: 1em 0;
+  font-weight: bold;
+}
+@media (min-width: 70em) {
+  /* line 44, ../sass/base/_typography.scss */
+  h2 {
+    font-size: 1.3em;
+  }
+}
+
+/* line 56, ../sass/base/_typography.scss */
+a {
+  color: #db2c27;
+}
+/* line 59, ../sass/base/_typography.scss */
+a:hover, a:focus {
+  color: #db2c27;
+}
+
+/* line 65, ../sass/base/_typography.scss */
+p {
+  font-size: 1.1em;
+  padding-bottom: 1em;
+  line-height: 1.5em;
+}
+@media (min-width: 70em) {
+  /* line 65, ../sass/base/_typography.scss */
+  p {
+    font-size: 1.2em;
+  }
+}
+
+/* line 1, ../sass/layout/_header.scss */
+#header {
+  text-align: center;
+  display: table;
+  height: 100vh;
+  width: 100%;
+}
+/* line 7, ../sass/layout/_header.scss */
+#header h1, #header h2, #header h3 {
+  color: #ffffff;
+  letter-spacing: 0;
+}
+/* line 12, ../sass/layout/_header.scss */
+#header h1 {
+  font-family: "Geomanist", Arial, sans-serif;
+  font-size: 3.5em;
+  font-weight: 300;
+  padding: 15px 0 0 0;
+}
+@media (min-width: 30em) {
+  /* line 12, ../sass/layout/_header.scss */
+  #header h1 {
+    font-size: 4.5em;
+  }
+}
+/* line 23, ../sass/layout/_header.scss */
+#header h2 {
+  font-size: 1.8em;
+  padding: 15px 0 22.5px;
+  letter-spacing: 1px;
+}
+@media (min-width: 30em) {
+  /* line 23, ../sass/layout/_header.scss */
+  #header h2 {
+    font-size: 2em;
+    padding: 30px 0 37.5px;
+  }
+}
+/* line 33, ../sass/layout/_header.scss */
+#header h2 sup {
+  font-size: 0.6em;
+}
+/* line 38, ../sass/layout/_header.scss */
+#header h3 {
+  font-size: 1.2em;
+  letter-spacing: 2.8px;
+}
+@media (min-width: 30em) {
+  /* line 38, ../sass/layout/_header.scss */
+  #header h3 {
+    font-size: 1.4em;
+    letter-spacing: 5.5px;
+  }
+}
+/* line 49, ../sass/layout/_header.scss */
+#header .table-row {
+  display: table-row;
+}
+/* line 53, ../sass/layout/_header.scss */
+#header .title {
+  display: table-cell;
+  vertical-align: middle;
+  text-shadow: 0px 0px 30px #000;
+}
+/* line 59, ../sass/layout/_header.scss */
+#header .more {
+  display: table-cell;
+  vertical-align: bottom;
+  padding-bottom: 10px;
+  color: #ffffff;
+  line-height: 1.5em;
+  font-size: 1.5em;
+  height: 10px;
+}
+/* line 68, ../sass/layout/_header.scss */
+#header .more a {
+  color: rgba(255, 255, 255, 0.5);
+  -moz-transition: color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+/* line 73, ../sass/layout/_header.scss */
+#header .more a:hover, #header .more a:focus {
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+}
+/* line 80, ../sass/layout/_header.scss */
+#header .logo {
+  display: block;
+  width: 100%;
+  height: 150px;
+  background: url("../img/R_logo.png");
+  background-size: 120px;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+@media (min-width: 30em) {
+  /* line 80, ../sass/layout/_header.scss */
+  #header .logo {
+    display: block;
+    height: 225px;
+    background-size: 180px;
+  }
+}
+
+/* line 1, ../sass/layout/_wrapper.scss */
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+@media (min-width: 30em) {
+  /* line 1, ../sass/layout/_wrapper.scss */
+  .wrapper {
+    width: 80%;
+  }
+}
+@media (min-width: 70em) {
+  /* line 1, ../sass/layout/_wrapper.scss */
+  .wrapper {
+    width: 70%;
+    max-width: 1000px;
+  }
+}
+
+/* line 1, ../sass/layout/_section.scss */
+.section {
+  padding: 2.5em 0 3.5em 0;
+}
+@media (min-width: 30em) {
+  /* line 1, ../sass/layout/_section.scss */
+  .section {
+    padding: 3.5em 0 5em 0;
+  }
+}
+@media (min-width: 70em) {
+  /* line 1, ../sass/layout/_section.scss */
+  .section {
+    padding: 5em 0 6.5em 0;
+  }
+}
+
+/* line 13, ../sass/layout/_section.scss */
+#about {
+  text-align: justify;
+  background-color: #ffffff;
+}
+
+/* line 19, ../sass/layout/_section.scss */
+#faq {
+  background-color: #f2f2f2;
+  background-image: url("../img/polygon_background.png");
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: auto;
+}
+@media (min-width: 1550px) {
+  /* line 19, ../sass/layout/_section.scss */
+  #faq {
+    background-image: url("../img/bg_left.png"), url("../img/bg_right.png");
+    background-position: left, right;
+    background-repeat: repeat-y, repeat-y;
+    background-size: auto, auto;
+  }
+}
+/* line 32, ../sass/layout/_section.scss */
+#faq h2 {
+  text-align: left;
+}
+
+/* line 37, ../sass/layout/_section.scss */
+#sponsors {
+  color: #ffffff;
+  background-color: #1d1e1e;
+  text-align: center;
+}
+/* line 42, ../sass/layout/_section.scss */
+#sponsors .lg, #sponsors .md, #sponsors .xs {
+  margin: 0 auto;
+}
+/* line 46, ../sass/layout/_section.scss */
+#sponsors .lg {
+  display: none;
+}
+@media (min-width: 70em) {
+  /* line 46, ../sass/layout/_section.scss */
+  #sponsors .lg {
+    display: block;
+    width: 90%;
+    max-width: 1150px;
+    letter-spacing: 80px;
+    line-height: 70px;
+  }
+}
+/* line 58, ../sass/layout/_section.scss */
+#sponsors .md {
+  display: none;
+}
+@media (min-width: 30em) {
+  /* line 58, ../sass/layout/_section.scss */
+  #sponsors .md {
+    display: block;
+    width: 90%;
+    letter-spacing: 70px;
+    line-height: 60px;
+  }
+}
+@media (min-width: 70em) {
+  /* line 58, ../sass/layout/_section.scss */
+  #sponsors .md {
+    display: none;
+  }
+}
+/* line 73, ../sass/layout/_section.scss */
+#sponsors .xs {
+  display: block;
+  width: 90%;
+  line-height: 70px;
+}
+@media (min-width: 30em) {
+  /* line 73, ../sass/layout/_section.scss */
+  #sponsors .xs {
+    display: none;
+  }
+}
+
+/* line 84, ../sass/layout/_section.scss */
+#contact {
+  text-align: center;
+  color: #ffffff;
+}
+/* line 88, ../sass/layout/_section.scss */
+#contact .social {
+  padding-top: 1em;
+  letter-spacing: 20px;
+}
+@media (min-width: 30em) {
+  /* line 88, ../sass/layout/_section.scss */
+  #contact .social {
+    letter-spacing: 40px;
+  }
+}
+/* line 96, ../sass/layout/_section.scss */
+#contact .social img {
+  width: 50px;
+}
+@media (min-width: 70em) {
+  /* line 96, ../sass/layout/_section.scss */
+  #contact .social img {
+    width: 60px;
+  }
+}
+
+/* line 1, ../sass/components/_button.scss */
+.btn {
+  font-family: "Inconsolata", monospace;
+  letter-spacing: 2.8px;
+  color: #ffffff;
+  background: rgba(24, 25, 25, 0.5);
+  border-radius: 0;
+  width: 250px;
+  border: 1px solid #ffffff;
+  text-transform: uppercase;
+  -moz-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+/* line 12, ../sass/components/_button.scss */
+.btn:hover {
+  color: #181919;
+  background: #ffffff;
+}
+@media (min-width: 30em) {
+  /* line 1, ../sass/components/_button.scss */
+  .btn {
+    width: 320px;
+    font-size: 150%;
+  }
+}
+
+/* line 1, ../sass/components/_logo.scss */
+#Robot {
+  background-image: url("../img/MtoR.png");
+  background-repeat: no-repeat;
+  background-size: 2400px;
+  left: 0;
+  margin: 0 auto;
+  width: 260px;
+  height: 230px;
+}
+
+/* line 1, ../sass/components/_svg.scss */
+#svg {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  text-align: center;
+}
+
+@keyframes pulse {
+  0% {
+    stroke: #5c1524;
+  }
+  10% {
+    stroke: #db2c27;
+  }
+  20% {
+    stroke: #5c1524;
+  }
+  100% {
+    stroke: #5c1524;
+  }
+}
+/* line 16, ../sass/components/_svg.scss */
+#path01 {
+  stroke: #5c1524;
+  fill: none;
+  -moz-animation-name: pulse;
+  -webkit-animation-name: pulse;
+  -ms-animation-name: pulse;
+  animation-name: pulse;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -moz-animation-duration: 8s;
+  -webkit-animation-duration: 8s;
+  -ms-animation-duration: 8s;
+  animation-duration: 8s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  -ms-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+/* line 16, ../sass/components/_svg.scss */
+#path02 {
+  stroke: #5c1524;
+  fill: none;
+  -moz-animation-name: pulse;
+  -webkit-animation-name: pulse;
+  -ms-animation-name: pulse;
+  animation-name: pulse;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -moz-animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  -ms-animation-duration: 5s;
+  animation-duration: 5s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  -ms-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+/* line 16, ../sass/components/_svg.scss */
+#path03 {
+  stroke: #5c1524;
+  fill: none;
+  -moz-animation-name: pulse;
+  -webkit-animation-name: pulse;
+  -ms-animation-name: pulse;
+  animation-name: pulse;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -moz-animation-duration: 8s;
+  -webkit-animation-duration: 8s;
+  -ms-animation-duration: 8s;
+  animation-duration: 8s;
+  -moz-animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+  -ms-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+/* line 16, ../sass/components/_svg.scss */
+#path04 {
+  stroke: #5c1524;
+  fill: none;
+  -moz-animation-name: pulse;
+  -webkit-animation-name: pulse;
+  -ms-animation-name: pulse;
+  animation-name: pulse;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -moz-animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  -ms-animation-duration: 5s;
+  animation-duration: 5s;
+  -moz-animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+  -ms-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+/* line 16, ../sass/components/_svg.scss */
+#path05 {
+  stroke: #5c1524;
+  fill: none;
+  -moz-animation-name: pulse;
+  -webkit-animation-name: pulse;
+  -ms-animation-name: pulse;
+  animation-name: pulse;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -moz-animation-duration: 8s;
+  -webkit-animation-duration: 8s;
+  -ms-animation-duration: 8s;
+  animation-duration: 8s;
+  -moz-animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+  -ms-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+/* line 16, ../sass/components/_svg.scss */
+#path06 {
+  stroke: #5c1524;
+  fill: none;
+  -moz-animation-name: pulse;
+  -webkit-animation-name: pulse;
+  -ms-animation-name: pulse;
+  animation-name: pulse;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -moz-animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  -ms-animation-duration: 5s;
+  animation-duration: 5s;
+  -moz-animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+  -ms-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+/* line 16, ../sass/components/_svg.scss */
+#path07 {
+  stroke: #5c1524;
+  fill: none;
+  -moz-animation-name: pulse;
+  -webkit-animation-name: pulse;
+  -ms-animation-name: pulse;
+  animation-name: pulse;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -moz-animation-duration: 8s;
+  -webkit-animation-duration: 8s;
+  -ms-animation-duration: 8s;
+  animation-duration: 8s;
+  -moz-animation-delay: 3.5s;
+  -webkit-animation-delay: 3.5s;
+  -ms-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+
+/* line 16, ../sass/components/_svg.scss */
+#path08 {
+  stroke: #5c1524;
+  fill: none;
+  -moz-animation-name: pulse;
+  -webkit-animation-name: pulse;
+  -ms-animation-name: pulse;
+  animation-name: pulse;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -moz-animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  -ms-animation-duration: 5s;
+  animation-duration: 5s;
+  -moz-animation-delay: 3.5s;
+  -webkit-animation-delay: 3.5s;
+  -ms-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}

@@ -1,0 +1,21 @@
+.btn {
+	font-family: _font(family-heading);
+	letter-spacing: 2.8px;
+	color: _palette(fg);
+	background: rgba(24, 25, 25, 0.5);
+	border-radius: 0;
+	width:250px;
+	border: 1px solid _palette(fg);
+	text-transform: uppercase;
+	@include vendor('transition', 'color #{_duration(transition)} ease-in-out, background #{_duration(transition)} ease-in-out' );
+
+	&:hover {
+		color: _palette(bg);
+		background: _palette(fg);
+	}
+
+	@include breakpoint(medium) {
+		width:320px;
+		font-size: 150%;
+	}
+}

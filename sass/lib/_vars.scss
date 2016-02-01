@@ -1,0 +1,20 @@
+$font: (
+	family:				('Open Sans', Helvetica, sans-serif),
+	family-heading:		('Inconsolata', monospace),
+	family-logo:		('Geomanist', Arial, sans-serif),
+	weight:				normal,
+	weight-bold:		bold,
+	weight-light:		300,
+);
+$palette: (
+	bg:					#181919,
+	fg:					#ffffff,
+	accent:				#db2c27,
+);
+$size: (
+	header:				15px,
+);
+$duration: (
+	transition:			0.2s,
+	activation:			1s
+);
