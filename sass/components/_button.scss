@@ -4,18 +4,37 @@
 	color: _palette(fg);
 	background: rgba(24, 25, 25, 0.5);
 	border-radius: 0;
-	width:250px;
+	width:220px;
 	border: 1px solid _palette(fg);
 	text-transform: uppercase;
+	display: block;
+	margin: auto;
 	@include vendor('transition', 'color #{_duration(transition)} ease-in-out, background #{_duration(transition)} ease-in-out' );
 
 	&:hover {
 		color: _palette(bg);
 		background: _palette(fg);
 	}
+	&:focus {
+		color: _palette(fg);
+		outline: none;
+	}
+
+	+.btn {
+		margin-top: 0.5em;
+	}
 
 	@include breakpoint(medium) {
-		width:320px;
+		display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 200px;
 		font-size: 150%;
+
+		+.btn {
+			margin-top: 0em;
+			margin-left: 0.5em;
+		}
 	}
+
 }

@@ -66,6 +66,24 @@
 	background-color: lighten(_palette(bg), 2);
 	text-align: center;
 
+	h1 {
+		@include breakpoint(large) {
+			padding-bottom: 1.5em;
+		}
+	}
+
+	p {
+		padding: 0 0 0 0;
+
+		@include breakpoint(medium) {
+			padding: 1em 0 0 0;
+		}
+
+		@include breakpoint(large) {
+			padding: 1.5em 0 0 0;
+		}
+	}
+
 	.lg, .md, .xs {
 		margin: 0 auto;
 	}
