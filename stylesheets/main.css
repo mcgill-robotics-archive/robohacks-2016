@@ -761,6 +761,20 @@ p {
   height: 230px;
 }
 
+#Robot2 {
+  background-image: url("../img/MtoR2.png");
+  background-repeat: no-repeat;
+  background-size: 2400px;
+  left: 0;
+  /*margin: 0 auto;*/
+  margin-top:0;
+  margin-bottom:0;
+  margin-left:43%;
+  /*margin-right:50%;*/
+  width: 247px;
+  height: 230px;
+}
+
 /* line 1, ../sass/components/_svg.scss */
 #svg {
   position: absolute;

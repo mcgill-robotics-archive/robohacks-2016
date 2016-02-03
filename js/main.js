@@ -41,9 +41,9 @@ $(function() {
   // Scene Handler
   var scene = new ScrollMagic.Scene({
     triggerElement: "#header", // point of execution
-    duration: 1200, // pin element for this duration
+    duration: 2100, // pin element for this duration
     triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
-    reverse: false // allows the effect to trigger when scrolled in the reverse direction
+    reverse: true // allows the effect to trigger when scrolled in the reverse direction
   })
   .setPin("#header"); // the element we want to pin
   // Add Scenes to ScrollMagic Controller
@@ -52,21 +52,34 @@ $(function() {
   ]);
 
   // Transition
-  var robot = $('#Robot'),
-  	pLocs = [0, -268, -536, -804, -1072, -1340, -1608, -1876, -2144],
+  var robot = $('#Robot2'),
+  	// pLocs = [0, -268, -536, -804, -1072, -1340, -1608, -1876, -2144],
+    pLocs = [0, -247, -494, -741, -988, -1235, -1482, -1729, -1976, -2223],
   	curFrm = 0,
   	lastStep = 0;
 
   skrollr.init({
   	beforerender: function(o){
-  		if (curFrm >= 9) {
-        doneTransformation = true;
-  			return;
-  		}
-  		if (o.curTop > lastStep + 50) {
-  			robot.css('background-position', pLocs[curFrm++]+ 'px 0px');
+  		//  if (curFrm >= 10) {
+      //  doneTransformation = true;
+  		// 	return;
+  		// }
+  		if (o.curTop > lastStep + 150) {
+        if(curFrm < 9){
+          curFrm++;
+        }
+        var nextFrame = curFrm;
+  			robot.css('background-position', pLocs[nextFrame] + 'px 0px');
   			lastStep = o.curTop;
-  		}
+  		}else if(o.curTop < lastStep - 150){
+        // if(curFrm<=0){curFrm=9;}
+        if(curFrm > 0){
+          curFrm--;
+        }
+        var prevFrame = curFrm;
+        robot.css('background-position', pLocs[prevFrame] + 'px 0px');
+        lastStep = o.curTop;
+      }
   	}
   });
 });
