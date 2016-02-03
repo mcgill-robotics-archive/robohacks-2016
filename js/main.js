@@ -60,25 +60,34 @@ $(function() {
 
   skrollr.init({
   	beforerender: function(o){
-  		//  if (curFrm >= 10) {
-      //  doneTransformation = true;
-  		// 	return;
-  		// }
-  		if (o.curTop > lastStep + 150) {
-        if(curFrm < 9){
-          curFrm++;
+      if (o.curTop <= 2100) {
+        // We enter here if we are scrolling within the header area
+        
+    		if (o.curTop < 150) {
+          // This handles the case where user scrolls really fast to the top
+          // We reset the frame to 0
+          curFrm = 0;
+          robot.css('background-position', pLocs[curFrm] + 'px 0px');
+          lastStep = o.curTop;
+        } else if (o.curTop > lastStep + 150) {
+          // Scrolling down
+          if(curFrm < 9){
+            curFrm++;
+            console.log("adding frame to: " + curFrm);
+          }
+          var nextFrame = curFrm;
+    			robot.css('background-position', pLocs[nextFrame] + 'px 0px');
+    			lastStep = o.curTop;
+    		} else if(o.curTop < lastStep - 150){
+          // Scrolling up
+          if(curFrm > 0){
+            curFrm--;
+            console.log("subtracting frame to: " + curFrm);
+          }
+          var prevFrame = curFrm;
+          robot.css('background-position', pLocs[prevFrame] + 'px 0px');
+          lastStep = o.curTop;
         }
-        var nextFrame = curFrm;
-  			robot.css('background-position', pLocs[nextFrame] + 'px 0px');
-  			lastStep = o.curTop;
-  		}else if(o.curTop < lastStep - 150){
-        // if(curFrm<=0){curFrm=9;}
-        if(curFrm > 0){
-          curFrm--;
-        }
-        var prevFrame = curFrm;
-        robot.css('background-position', pLocs[prevFrame] + 'px 0px');
-        lastStep = o.curTop;
       }
   	}
   });
