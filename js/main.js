@@ -52,9 +52,10 @@ $(function() {
   ]);
 
   // Transition
-  var robot = $('#Robot2'),
+  var robot = $('#Robot'),
   	// pLocs = [0, -268, -536, -804, -1072, -1340, -1608, -1876, -2144],
-    pLocs = [0, -247, -494, -741, -988, -1235, -1482, -1729, -1976, -2223],
+    // pLocs = [0, -247, -494, -741, -988, -1235, -1482, -1729, -1976, -2223],
+    pLocs = [0, -247, -494, -741, -988, -1235, -1482, -1729, -1976, -2220],
   	curFrm = 0,
   	lastStep = 0;
 
@@ -62,7 +63,7 @@ $(function() {
   	beforerender: function(o){
       if (o.curTop <= 2100) {
         // We enter here if we are scrolling within the header area
-        
+
     		if (o.curTop < 150) {
           // This handles the case where user scrolls really fast to the top
           // We reset the frame to 0
