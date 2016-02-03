@@ -529,10 +529,11 @@ p {
 /* line 53, ../sass/layout/_header.scss */
 #header .title {
   display: table-cell;
+  height: 100vh;
   vertical-align: middle;
   text-shadow: 0px 0px 30px #000;
 }
-/* line 59, ../sass/layout/_header.scss */
+/* line 60, ../sass/layout/_header.scss */
 #header .more {
   display: table-cell;
   vertical-align: bottom;
@@ -542,7 +543,7 @@ p {
   font-size: 1.5em;
   height: 10px;
 }
-/* line 68, ../sass/layout/_header.scss */
+/* line 69, ../sass/layout/_header.scss */
 #header .more a {
   color: rgba(255, 255, 255, 0.5);
   -moz-transition: color 0.2s ease-in-out;
@@ -550,13 +551,13 @@ p {
   -ms-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
-/* line 73, ../sass/layout/_header.scss */
+/* line 74, ../sass/layout/_header.scss */
 #header .more a:hover, #header .more a:focus {
   text-decoration: none;
   outline: none;
   color: #ffffff;
 }
-/* line 80, ../sass/layout/_header.scss */
+/* line 81, ../sass/layout/_header.scss */
 #header .logo {
   display: block;
   width: 100%;
@@ -567,7 +568,7 @@ p {
   background-repeat: no-repeat;
 }
 @media (min-width: 30em) {
-  /* line 80, ../sass/layout/_header.scss */
+  /* line 81, ../sass/layout/_header.scss */
   #header .logo {
     display: block;
     height: 225px;
