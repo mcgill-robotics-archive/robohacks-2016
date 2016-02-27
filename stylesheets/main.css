@@ -744,6 +744,7 @@ p {
   display: block;
   width: 90%;
   line-height: 70px;
+  letter-spacing: 10px;
 }
 @media (min-width: 30em) {
   /* line 118, ../sass/layout/_section.scss */
@@ -752,28 +753,28 @@ p {
   }
 }
 
-/* line 129, ../sass/layout/_section.scss */
+/* line 130, ../sass/layout/_section.scss */
 #contact {
   text-align: center;
   color: #ffffff;
 }
-/* line 133, ../sass/layout/_section.scss */
+/* line 134, ../sass/layout/_section.scss */
 #contact .social {
   padding-top: 1em;
   letter-spacing: 20px;
 }
 @media (min-width: 30em) {
-  /* line 133, ../sass/layout/_section.scss */
+  /* line 134, ../sass/layout/_section.scss */
   #contact .social {
     letter-spacing: 40px;
   }
 }
-/* line 141, ../sass/layout/_section.scss */
+/* line 142, ../sass/layout/_section.scss */
 #contact .social img {
   width: 50px;
 }
 @media (min-width: 70em) {
-  /* line 141, ../sass/layout/_section.scss */
+  /* line 142, ../sass/layout/_section.scss */
   #contact .social img {
     width: 60px;
   }

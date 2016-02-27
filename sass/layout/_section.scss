@@ -119,6 +119,7 @@
 		display: block;
 		width:90%;
 		line-height: 70px;
+		letter-spacing: 10px;
 
 		@include breakpoint(medium) {
 			display: none;
