@@ -60,10 +60,14 @@
 		text-align: left;
 	}
 }
-
 #sponsors {
-	color: _palette(fg);
+	background-color: lighten(_palette(bg), 1);
+}
+#partners {
 	background-color: lighten(_palette(bg), 2);
+}
+#sponsors, #partners {
+	color: _palette(fg);
 	text-align: center;
 
 	h1 {
@@ -125,6 +129,7 @@
 			display: none;
 		}
 	}
+
 }
 
 #contact {

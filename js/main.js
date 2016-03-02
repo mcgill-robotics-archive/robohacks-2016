@@ -1,5 +1,11 @@
 var doneTransformation = false;
 
+$(function() {
+  if ($(window).width() <= 350 ) {
+    $('#mlh-trust-badge').css('position', 'absolute')
+  }
+});
+
 // Smooth scrolling
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -47,9 +53,12 @@ $(function() {
   })
   .setPin("#header"); // the element we want to pin
   // Add Scenes to ScrollMagic Controller
-  controller.addScene([
-    scene,
-  ]);
+  if ($(window).width() >= 400) {
+    controller.addScene([
+      scene,
+    ]);
+  }
+
 
   // Transition
   var robot = $('#Robot'),
@@ -61,6 +70,10 @@ $(function() {
 
   skrollr.init({
   	beforerender: function(o){
+      if ($(window).width() < 400) {
+        // If web browser is less than 400px wide, disable skrollr animation
+        return;
+      }
       if (o.curTop <= 2100) {
         // We enter here if we are scrolling within the header area
 
@@ -74,7 +87,6 @@ $(function() {
           // Scrolling down
           if(curFrm < 9){
             curFrm++;
-            console.log("adding frame to: " + curFrm);
           }
           var nextFrame = curFrm;
     			robot.css('background-position', pLocs[nextFrame] + 'px 0px');
@@ -83,7 +95,6 @@ $(function() {
           // Scrolling up
           if(curFrm > 0){
             curFrm--;
-            console.log("subtracting frame to: " + curFrm);
           }
           var prevFrame = curFrm;
           robot.css('background-position', pLocs[prevFrame] + 'px 0px');
